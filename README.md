@@ -1,5 +1,5 @@
 # grid1
-grid-layout like pinterest
+grid-layout
 
 ## features
 - [x] responsive web design
