@@ -1,14 +1,17 @@
 $(function() {
-    var trigger = $('#trigger');
-    var menu = $('nav ul');
-    $(trigger).on('click', function(e) {
+    var wrapper = document.querySelector('.wrapper')
+    var nav = $('nav ul');
+
+    $(wrapper).on('click', function(e) {
         e.preventDefault();
-        menu.slideToggle();
+        wrapper.classList.toggle('toggle');
+        nav.slideToggle();
     });
+
     $(window).resize(function() {
         var w = $(window).width();
-        if (w > 320 && menu.is(':hidden')) {
-            menu.removeAttr('style');
+        if (w > 320 && nav.is(':hidden')) {
+            nav.removeAttr('style');
         }
     });
 });

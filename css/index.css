@@ -53,7 +53,7 @@ nav {
     }
 
     nav .menu {
-        display: flex;
+        text-align: center;
         justify-content: center;
         align-items: center;
         background-color: black;
@@ -61,10 +61,31 @@ nav {
         height: 48px; 
     }
 
-    nav .menu a#trigger {
-        font-size: 12px;
+    nav .menu .wrapper {
+        position: absolute;
+        top: 14px;
+        margin-left: 10px;
+    }
+
+    .wrapper:hover{
+        opacity: 0.5;
+        transition: opacity ease-in;
+    }
+
+    nav .menu .wrapper div {
+        width: 20px;
+        height: 1px;
+        margin: 5px;
+        background-color: white;
         text-decoration: none;
-        
+        transition: all 0.3s ease;
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, -1px);
+    }
+    .toggle .line2 {
+        transform: rotate(45deg) translate(-5px, 0px);
     }
 
 img {
