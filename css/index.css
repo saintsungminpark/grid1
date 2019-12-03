@@ -65,6 +65,7 @@ nav {
         position: absolute;
         top: 14px;
         margin-left: 10px;
+        cursor: pointer;
     }
 
     .wrapper:hover{
@@ -82,10 +83,10 @@ nav {
     }
 
     .toggle .line1 {
-        transform: rotate(-45deg) translate(-5px, -1px);
+        transform: rotate(-45deg) translate(-2px, 2px);
     }
     .toggle .line2 {
-        transform: rotate(45deg) translate(-5px, 0px);
+        transform: rotate(45deg) translate(-2px, -3px);
     }
 
 img {
